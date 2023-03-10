@@ -1,0 +1,135 @@
+.main {
+	box-sizing: border-box;
+	margin: 0 auto;
+	min-height: 370px;
+	height: auto;
+	width: 550px;
+	box-shadow: 0 0 5px grey;
+	padding-top: 30px;
+	paddin-bottom: 10px;
+	background: #e5e5e5;
+}
+
+.title {
+	margin: 0 auto 30px;
+	display: block;
+	align-text: center;
+	max-width: 300px;
+}
+
+.search-container {
+	height: auto;
+	padding: 0 30px;
+	margin-bottom: 10px;
+	min-height: 110px;
+}
+
+.search-container__search {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border: 1px solid rgb(246, 251, 251);
+	border-radius: 3px;
+	filter: drop-shadow(0px 0px 1px grey);
+	outline: none;
+	padding: 0 0 0 10px;
+	font-size: 24px;
+}
+
+.search-container__list {
+	display: block;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	background-color: #fdf5e6;
+	height: 100%;
+}
+
+.search-container__item {
+	height: 40px;
+	width: 100%;
+	list-style: none;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	border: 1px solid grey;
+	border-top: none;
+	border-radius: 3px;
+	font-size: 18px;
+}
+
+.search-container__item:first-child {
+	border-top: 1px solid grey;
+}
+
+.search-container__item:hover {
+	background-color: #ccccff;
+}
+
+.added-repositories {
+	padding: 20px 30px;
+}
+
+.added-repositories__card {
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	border: 1px solid rgb(246, 251, 251);
+	filter: drop-shadow(0px 0px 1px grey);
+	padding: 15px;
+	padding-right: 10px;
+	font-size: 18px;
+}
+
+.added-repositories__user {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.added-repositories__name {
+	margin: 0;
+}
+
+.added-repositories__owner {
+	margin: 0;
+}
+
+.added-repositories__stars {
+	margin: 0;
+}
+
+.added-repositories__close {
+	width: 55px;
+	height: 55px;
+	background: none;
+	background: url('icon.svg') no-repeat;
+	border: none;
+	margin: auto 0;
+}
+
+.added-repositories__close:hover {
+	filter: drop-shadow(0px 0px 2px #e68d83);
+}
+
+input[type='search']::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
+input[type='search']::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	display: none;
+}
